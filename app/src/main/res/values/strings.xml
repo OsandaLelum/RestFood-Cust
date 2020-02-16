@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">RestFood-Shop</string>
+    <string name="done">Done</string>
+    <string name="button1">AddFood</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="enter_number">Enter phone number</string>
+    <string name="switch_text">Yes</string>
+    <string name="demo_card_text">Sooooooo SAD</string>
+    <string name="dummy">Dummy</string>
+
+
+    <string name="title_activity_main_bottom_navigation">main_bottom_navigation</string>
+    <string name="title_home">Menu</string>
+    <string name="title_dashboard">Order</string>
+    <string name="title_notifications">About</string>
+
+    <string name="food_title">Pizza</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_price">Price</string>
+    <string name="hint">This is hint</string>
+    <string name="requierd">Requierd</string>
+    <string name="min_time">Min Time</string>
+    <string name="max_time">Max Time</string>
+    <string name="duration">Duration</string>
+    <string name="to">to</string>
+    <string name="food_type">Food Type</string>
+    <string name="radio_veg">Veg</string>
+    <string name="radio_non_veg">Non-Veg</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="food_cat">Category</string>
+
+
+    <!--    string for fragment notification-->
+    <string name="view_food">View Food List</string>
+    <string name="add_food">Add Food</string>
+    <string name="summery">Summery</string>
+    <string name="qr">QR</string>
+    <string name="signout">Sign-Out</string>
+    <string name="invent">Inventry</string>
+
+    <string name="address">Address</string>
+    <string name="type_of_shop">Type of Shop</string>
+    <string name="phone_no">Phone No</string>
+    <string name="email">Email</string>
+    <string name="shop_name">Shop Name</string>
+
+    <string name="Item_price">Item_price</string>
+    <string name="fire_base_shop">shop</string>
+    <string name="fire_base_shop_list">ShopList</string>
+
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="Item_name">Item_name</string>
+
+
+    <string name="item">Item</string>
+    <string name="increace">+</string>
+    <string name="reduse">-</string>
+
+    <string name="prepare">Prepare</string>
+    <string name="Ready">Ready</string>
+    <string name="Done">Done</string>
+    <string name="menu_refresh">menu_refresh</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+    <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+    <string name="status_paid">Status:Paid</string>
+    <string name="order">Order</string>
+    <string name="preparing">Preparing</string>
+    <string name="payment">Payment</string>
+    <string name="may_i_ask_your_phone_number">May I ask your phone number?</string>
+    <string name="quantity">Quantity</string>
+    <string name="minquantity">MinQuantity</string>
+    <string name="today_income">Today Income</string>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="image_max">100dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding30">30dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="textfieldhight">55dp</dimen>
+    <dimen name="car_radius5">5dp</dimen>
+    <dimen name="text20">20dp</dimen>
+    <dimen name="text25">25dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding20">20sp</dimen>
+    <dimen name="text17">17sp</dimen>
+    <dimen name="text22">22sp</dimen>
+    <dimen name="lay100">100dp</dimen>
+    <dimen name="text40">40sp</dimen>
+</resources>

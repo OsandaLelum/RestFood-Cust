@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Add_FoodItem">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="151dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/food_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="@dimen/padding5"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/food_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/food_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/food_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding5"
+            android:hint="@string/food_price"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/food_price_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/food_price_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding5"
+            android:hint="@string/food_cat"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/food_cat_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/food_des_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding5"
+            android:hint="Description"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/food_des_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="@string/duration"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding5"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/min_pre_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/min_time"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+                app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+                app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+                app:boxCornerRadiusTopStart="@dimen/car_radius5"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/min_pre_time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:text="@string/to" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/max_pre_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/max_time"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+                app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+                app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+                app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/max_pre_time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/food_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="@string/food_type"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio_veg" />
+
+            <RadioButton
+                android:id="@+id/radioButton_non_veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio_non_veg" />
+
+        </RadioGroup>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="@dimen/padding15"
+            android:padding="@dimen/padding5"
+            android:layout_margin="@dimen/padding15"
+            app:cardCornerRadius="@dimen/padding15">
+
+            <ImageView
+                android:id="@+id/food_image"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:onClick="openFileChooser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding15"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button_done_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle1"
+            android:onClick="onSubmit"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/padding5"/>
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle2"
+            android:text="@string/cancel"
+            android:onClick="onCancel"
+            android:textColor="@color/button_blue"
+            android:layout_margin="@dimen/padding5"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

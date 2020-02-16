@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailInventory">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        tools:layout_editor_absoluteX="234dp"
+
+        tools:layout_editor_absoluteY="151dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:textStyle="bold"
+            android:text="@string/Item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text20"
+            android:paddingHorizontal="@dimen/padding15"
+            android:gravity="center">
+
+        </TextView>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/item_Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding5"
+            android:hint="@string/food_price"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/item_price_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/item_Quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding5"
+            android:hint="@string/quantity"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/item_qty_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/quantity"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/item_min_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding5"
+            android:hint="@string/minquantity"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/item_min_qty_text"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding15"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:background="@drawable/buttonstyle1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:onClick="onSubmit"
+            android:layout_margin="@dimen/padding5"
+            android:text="@string/update" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:background="@drawable/buttonstyle2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/button_blue"
+            android:onClick="deleteItem"
+            android:layout_margin="@dimen/padding5"
+            android:text="@string/delete" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

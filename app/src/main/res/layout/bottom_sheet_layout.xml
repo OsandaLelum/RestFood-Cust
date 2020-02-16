@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/padding15"
+    android:paddingTop="@dimen/padding15"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/increace"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/button_blue"
+            android:textSize="@dimen/padding30"
+            android:text="@string/increace">
+        </TextView>
+
+        <TextView
+            android:id="@+id/reduce"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/button_blue"
+            android:textSize="@dimen/padding30"
+            android:text="@string/reduse">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding5"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/item_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:outlineSpotShadowColor="@color/button_blue"
+            android:hint="@string/item"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/item_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:text=" " />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/qty_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="@string/quantity"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/qty_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

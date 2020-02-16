@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "439104730157",
+    "firebase_url": "https://restfood-3a1fc.firebaseio.com",
+    "project_id": "restfood-3a1fc",
+    "storage_bucket": "restfood-3a1fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439104730157:android:dfb136e84d7d7d26",
+        "android_client_info": {
+          "package_name": "com.dash.restfood_customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439104730157-o0j040qk4bfl2d61ivhmk4i2s1dvm9f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRITGOjoT79HZP8XRdZt56gJ2-jTC_uLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439104730157-o0j040qk4bfl2d61ivhmk4i2s1dvm9f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439104730157:android:8df40b338eedbc7c",
+        "android_client_info": {
+          "package_name": "com.example.restfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439104730157-486h3eun1m43t5g8rd4un6rc5ci47fji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.restfood",
+            "certificate_hash": "886a83bec02296b9e06abd42090fa310a600cdea"
+          }
+        },
+        {
+          "client_id": "439104730157-o0j040qk4bfl2d61ivhmk4i2s1dvm9f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRITGOjoT79HZP8XRdZt56gJ2-jTC_uLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439104730157-o0j040qk4bfl2d61ivhmk4i2s1dvm9f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439104730157:android:cf1fffe2551e87c17ef4a4",
+        "android_client_info": {
+          "package_name": "com.restfood.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439104730157-h26ucosdhshq8kv43hmbuv0refj6d61t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.restfood.myapplication",
+            "certificate_hash": "e1a17749858b73ca8991a48243c8e2f125d57f26"
+          }
+        },
+        {
+          "client_id": "439104730157-o0j040qk4bfl2d61ivhmk4i2s1dvm9f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRITGOjoT79HZP8XRdZt56gJ2-jTC_uLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439104730157-o0j040qk4bfl2d61ivhmk4i2s1dvm9f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

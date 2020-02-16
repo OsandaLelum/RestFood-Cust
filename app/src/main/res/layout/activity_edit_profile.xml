@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:id="@+id/edit_profile_phone_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_no"
+            android:layout_gravity="center"
+            android:textSize="@dimen/large_text"
+            android:textColor="@color/button_blue"
+            >
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/shopname_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            android:layout_marginBottom="@dimen/padding5"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shopname_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textfieldhight"
+                android:hint="@string/shop_name"
+                android:layout_marginBottom="@dimen/padding5"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/shopaddress_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            android:layout_marginBottom="@dimen/padding5"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shopaddress_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textfieldhight"
+                android:hint="@string/address"
+                android:layout_marginBottom="@dimen/padding5"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/type_of_shop_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            android:layout_marginBottom="@dimen/padding5"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/type_of_shop_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textfieldhight"
+                android:hint="@string/type_of_shop"
+                android:layout_marginBottom="@dimen/padding5"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            android:layout_marginBottom="@dimen/padding5"
+            app:boxCornerRadiusBottomEnd="@dimen/car_radius5"
+            app:boxCornerRadiusBottomStart="@dimen/car_radius5"
+            app:boxCornerRadiusTopEnd="@dimen/car_radius5"
+            app:boxCornerRadiusTopStart="@dimen/car_radius5"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textfieldhight"
+                android:hint="@string/email"
+                android:layout_marginBottom="@dimen/padding5"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/edit_profile_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle1"
+                android:text="@string/done"
+                android:onClick="onDone"
+
+                >
+            </Button>
+
+                <Button
+                    android:id="@+id/edit_profile_cancel"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonstyle2"
+                    android:text="@string/button_cancel"
+                    android:onClick="onCancel"                    >
+
+
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
