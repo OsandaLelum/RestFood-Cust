@@ -28,7 +28,7 @@ Inventry extends AppCompatActivity {
 
     //recycler view part
     private RecyclerView rView;
-   // private InventoryAdapter rAdapter;
+    private InventryAdapter rAdapter;
     private RecyclerView.LayoutManager rLayoutManager;
 
 
@@ -93,21 +93,21 @@ Inventry extends AppCompatActivity {
     private void postUi()
     {
         //assigning values
-//        rAdapter=new InventoryAdapter(itemList);
-//        rView.setLayoutManager(rLayoutManager);
-//        rView.setAdapter(rAdapter);
-//
-//        rAdapter.setOnItemClickListener(new InventoryAdapter.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(int position) {
-//                Intent inta=new Intent(Inventry.this,DetailInventory.class);
-////                //inta.putExtra("Demo",obj.getFoodName());
-//                inta.putExtra("DocId",docIdList.get(position));
-//                startActivity(inta);
-//
-//
-//            }
-//        });
+        rAdapter=new InventryAdapter(itemList);
+        rView.setLayoutManager(rLayoutManager);
+        rView.setAdapter(rAdapter);
+
+        rAdapter.setOnItemClickListener(new InventryAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent inta=new Intent(Inventry.this,DetailInventory.class);
+//                //inta.putExtra("Demo",obj.getFoodName());
+                inta.putExtra("DocId",docIdList.get(position));
+                startActivity(inta);
+
+
+            }
+        });
 
 
     }

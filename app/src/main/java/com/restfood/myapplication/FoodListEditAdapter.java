@@ -1,5 +1,4 @@
 package com.restfood.myapplication;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,8 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
-
-///this class is to assign value and create a componentx
+///this class is to assign value and create a components
 public class FoodListEditAdapter extends RecyclerView.Adapter<FoodListEditAdapter.FoodListEditViewHolder> {
 
     ///use this list to show in list view
@@ -65,7 +63,7 @@ public class FoodListEditAdapter extends RecyclerView.Adapter<FoodListEditAdapte
     }
 
 
-    ///this is identfing the view component andr returnig
+    ///this is identfying the view component and returning
     @NonNull
     @Override
     public FoodListEditViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -87,7 +85,7 @@ public class FoodListEditAdapter extends RecyclerView.Adapter<FoodListEditAdapte
     }
 
 
-    //this returnig number of elements in this list
+    //this returning number of elements in this list
     @Override
     public int getItemCount() {
         return foodListX.size();

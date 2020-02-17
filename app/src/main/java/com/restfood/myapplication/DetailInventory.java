@@ -62,21 +62,36 @@ public class DetailInventory extends AppCompatActivity {
     {
         db.collection("shop")
                 .document(new Auth().getUId())
-                .collection("FoodList")
+                .collection("inventory")
                 .document(docId)
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        //assign value to foodData object
-                        obj=documentSnapshot.toObject(InventryData.class);
-                        //assignValues();
-                        Toast.makeText(getApplicationContext(),"current data updated",Toast.LENGTH_LONG).show();
-                        //Log.d("This is test of int:",String.valueOf(foodObj));
+                        try
+                        {
+                            //Toast.makeText(getApplicationContext(),docId,Toast.LENGTH_LONG).show();
+                            double price=Double.valueOf(documentSnapshot.get("price").toString());
+                            double minQty=Double.valueOf(documentSnapshot.get("minQty").toString());
+                            double quantity=Double.valueOf(documentSnapshot.get("quantity").toString());
+                            //String name=documentSnapshot.get("name").toString();
+
+                            //InventryData taskItem = new InventryData(name,quantity,price,minQty);
+                            obj=new InventryData(documentSnapshot.get("name").toString(),quantity,price,minQty);
+
+                            assignValues();
+
+                        }
+                        catch (Exception e)
+                        {
+                            Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
+
+                        }
+
+                        Toast.makeText(getApplicationContext(),obj.getName(),Toast.LENGTH_LONG).show();
                     }
 
                 });
-
 
     }
 
@@ -85,6 +100,34 @@ public class DetailInventory extends AppCompatActivity {
 
     public void onSubmit(View view)
     {
+        String price=priceEditText.getText().toString();
+        String qty=qtyEditText.getText().toString();
+        String minQty=minQtyEditText.getText().toString();
+
+        InventryData objx=new InventryData(obj.getName(),Double.valueOf(qty),Double.valueOf(price),Double.valueOf(minQty));
+
+        db.collection("shop")
+                .document(new Auth().getUId())
+                .collection("inventory")
+                .document(docId)
+                .set(objx)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(getApplicationContext(),"Updated Successfully",Toast.LENGTH_LONG).show();
+                        finish();
+
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getApplicationContext(),"Update failure",Toast.LENGTH_LONG).show();
+                        finish();
+                    }
+                });
+
+
 
     }
 
